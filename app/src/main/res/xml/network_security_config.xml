@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The SJCAM camera exposes a local HTTP server on the Wi-Fi AP gateway.
+     Only local-network cleartext is needed; base-config keeps it simple so
+     that any gateway IP (192.168.1.254 / 192.168.8.1 / custom) works. -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

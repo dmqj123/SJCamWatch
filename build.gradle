@@ -1,0 +1,5 @@
+// Root build file. Pure Java / framework-only project: no AndroidX, no Kotlin,
+// no external runtime dependencies -> builds inside WSL without extra downloads.
+plugins {
+    id 'com.android.application' version '8.5.1' apply false
+}

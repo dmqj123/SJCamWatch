@@ -1,0 +1,36 @@
+pluginManagement {
+    repositories {
+        // Aliyun mirrors come first: Maven Central is not reachable from this network.
+        maven {
+            name = "AliyunGoogle"
+            url = uri("https://maven.aliyun.com/repository/google")
+        }
+        maven {
+            name = "AliyunPublic"
+            url = uri("https://maven.aliyun.com/repository/public")
+        }
+        maven {
+            name = "AliyunGradlePlugin"
+            url = uri("https://maven.aliyun.com/repository/gradle-plugin")
+        }
+        google()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven {
+            name = "AliyunGoogle"
+            url = uri("https://maven.aliyun.com/repository/google")
+        }
+        maven {
+            name = "AliyunPublic"
+            url = uri("https://maven.aliyun.com/repository/public")
+        }
+        google()
+    }
+}
+
+rootProject.name = "SJCamWatch"
+include(":app")

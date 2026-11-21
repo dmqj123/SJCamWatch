@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.sjcam.watch'
+    compileSdk 34
+
+    defaultConfig {
+        // OPPO Watch X3 mini = ColorOS Watch 16.0, Android 11 (API 30), round 466x466.
+        applicationId 'com.sjcam.watch'
+        minSdk 30
+        targetSdk 34
+        versionCode 6
+        versionName '1.5'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix ''
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // No dataBinding / compose / viewBinding: UI is built in Java so that every
+    // widget can be positioned inside the round-screen safe column at runtime.
+    packaging {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+// Framework APIs only. Nothing to resolve at build time except AGP itself.
+dependencies {
+}

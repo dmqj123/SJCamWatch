@@ -1,0 +1,24 @@
+# ---- Gradle / build output ----
+.gradle/
+build/
+app/build/
+local.properties
+
+# ---- IDE ----
+.idea/
+*.iml
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- binaries & signing material ----
+*.apk
+*.ap_
+*.aab
+*.jks
+*.keystore
+
+# ---- logs / temp ----
+*.log
+*.tmp

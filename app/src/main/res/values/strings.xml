@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SJCAM 相机</string>
+    <string name="connected">已连接相机</string>
+    <string name="disconnected">未连接相机</string>
+    <string name="checking">正在检测相机…</string>
+    <string name="retry">重试</string>
+    <string name="wifi_settings">WLAN 设置</string>
+    <string name="back">返回</string>
+    <string name="shoot">拍摄</string>
+    <string name="history">查看历史</string>
+    <string name="photo">照片</string>
+    <string name="video">视频</string>
+    <string name="preview_on">预览：开</string>
+    <string name="preview_off">预览：关</string>
+    <string name="download">下载</string>
+</resources>
